@@ -1,0 +1,480 @@
+{
+	"info": {
+		"_postman_id": "aaf747be-0e57-4657-ab29-7075b2f31909",
+		"name": "My Books",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22504070"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000//api-docs/#/Auth/post_auth_register",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"gegelicacv70@gmail.com\",\n  \"name\": \"Angelica\",\n  \"password\": \"gel365\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000//api-docs/#/Auth/post_auth_login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"",
+						"api-docs",
+						""
+					],
+					"hash": "/Auth/post_auth_login"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000//api-docs/#/Auth/post_auth_login",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"gegelicacv70@gmail.com\",\n  \"password\": \"gel365\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000//api-docs/#/Auth/post_auth_login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"",
+						"api-docs",
+						""
+					],
+					"hash": "/Auth/post_auth_login"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000//api-docs/#/Auth/post_auth_login Copy",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 2,\n  \"title\": \"string\",\n  \"userId\": 5\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000//api-docs/#/Categories/post_categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"",
+						"api-docs",
+						""
+					],
+					"hash": "/Categories/post_categories"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000//api-docs/#/Categories/get_categories",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "curl -X 'GET' \\\n  'http://localhost:3000/categories' \\\n  -H 'accept: */*'"
+				},
+				"url": {
+					"raw": "http://localhost:3000//api-docs/#/Categories/get_categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"",
+						"api-docs",
+						""
+					],
+					"hash": "/Categories/get_categories"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000//api-docs/#/Shared/post_shared_share",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"categoryId\": 2,\n  \"email\": \"gegelicacv70@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000//api-docs/#/Shared/post_shared_share",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"",
+						"api-docs",
+						""
+					],
+					"hash": "/Shared/post_shared_share"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000//api-docs/#/Shared/get_shared",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n[\n  {\n    \"id\": 1,\n    \"title\": \"Flores\",\n    \"userId\": 5,\n    \"todoLists\": []\n  },\n  {\n    \"id\": 2,\n    \"title\": \"string\",\n    \"userId\": 5,\n    \"todoLists\": []\n  }\n]"
+				},
+				"url": {
+					"raw": "http://localhost:3000//api-docs/#/Shared/get_shared",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"",
+						"api-docs",
+						""
+					],
+					"hash": "/Shared/get_shared"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000//api-docs/#/Todos/post_todos",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"Comprar mantimentos\",\n  \"description\": \"Comprar arroz, vegetais e leite\",\n  \"dateForConclusion\": \"2024-12-31\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000//api-docs/#/Todos/post_todos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"",
+						"api-docs",
+						""
+					],
+					"hash": "/Todos/post_todos"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000//api-docs/#/Todos/get_todos",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n  {\n    \"id\": 3,\n    \"title\": \"Comprar mantimentos\",\n    \"description\": \"Comprar arroz, vegetais e leite\",\n    \"createdAt\": \"2024-12-19T12:43:35.731Z\",\n    \"concludeAt\": null,\n    \"dateForConclusion\": \"2024-12-31T00:00:00.000Z\",\n    \"categoryId\": null,\n    \"userId\": 5\n  },\n  {\n    \"id\": 2,\n    \"title\": \"Comprar flores\",\n    \"description\": \"Hortencias, rosas\",\n    \"createdAt\": \"2024-12-19T01:00:03.949Z\",\n    \"concludeAt\": \"2024-12-19T01:04:24.319Z\",\n    \"dateForConclusion\": \"2024-12-18T00:00:00.000Z\",\n    \"categoryId\": null,\n    \"userId\": 5\n  }\n]"
+				},
+				"url": {
+					"raw": "http://localhost:3000//api-docs/#/Todos/get_todos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"",
+						"api-docs",
+						""
+					],
+					"hash": "/Todos/get_todos"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000//api-docs/#/get_todos_pending",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n  {\n    \"id\": 3,\n    \"title\": \"Comprar mantimentos\",\n    \"description\": \"Comprar arroz, vegetais e leite\",\n    \"createdAt\": \"2024-12-19T12:43:35.731Z\",\n    \"concludeAt\": null,\n    \"dateForConclusion\": \"2024-12-31T00:00:00.000Z\",\n    \"categoryId\": null,\n    \"userId\": 5\n  }\n]"
+				},
+				"url": {
+					"raw": "http://localhost:3000//api-docs/#/get_todos_pending",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"",
+						"api-docs",
+						""
+					],
+					"hash": "/get_todos_pending"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000//api-docs/#/Todos/get_todos_overdue",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n  {\n    \"id\": \"string\",\n    \"title\": \"string\",\n    \"description\": \"string\",\n    \"createdAt\": \"2024-12-19T13:15:48.123Z\",\n    \"concludeAt\": \"2024-12-19T13:15:48.123Z\",\n    \"completed\": true\n  }\n]"
+				},
+				"url": {
+					"raw": "http://localhost:3000//api-docs/#/Todos/get_todos_overdue",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"",
+						"api-docs",
+						""
+					],
+					"hash": "/Todos/get_todos_overdue"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000//api-docs/#/Todos/addCategoryTodo",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 1,\n  \"title\": \"Minha ToDo List\",\n  \"description\": \"Descrição da minha todoList\",\n  \"category\": {\n    \"id\": 2,\n    \"name\": \"Trabalho\"\n  }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000//api-docs/#/Todos/addCategoryTodo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"",
+						"api-docs",
+						""
+					],
+					"hash": "/Todos/addCategoryTodo"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000//api-docs/#/Todos/patch_todos__id__complete",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\t\nResponse body\nDownload\n{\n  \"id\": 2,\n  \"title\": \"Comprar flores\",\n  \"description\": \"Hortencias, rosas\",\n  \"createdAt\": \"2024-12-19T01:00:03.949Z\",\n  \"concludeAt\": \"2024-12-19T13:21:41.175Z\",\n  \"dateForConclusion\": \"2024-12-18T00:00:00.000Z\",\n  \"categoryId\": null,\n  \"userId\": 5\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000//api-docs/#/Todos/patch_todos__id__complete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"",
+						"api-docs",
+						""
+					],
+					"hash": "/Todos/patch_todos__id__complete"
+				}
+			},
+			"response": []
+		}
+	]
+}
